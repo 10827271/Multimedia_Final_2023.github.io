@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>零食</title>
+    <title>歪國零食</title>
     <link rel="stylesheet" href="../assets/style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 
@@ -16,6 +16,21 @@
 
 <body>
     <div id="page" class="site">
+
+        <aside class="site-off desktop-hide">
+            <div class="off-canvas">
+                <div class="canvas-head">
+                    <div class="logo"><a href="/"><samp class="circle">歪國零食</samp></a></div>
+                    <a href="#" class="t-close flexcenter"><i class="ri-close-line"></i></a>
+                </div>
+                <div class="departments"></div>
+                <nav></nav>
+                <div class="thetop-nav"></div>
+            </div>
+        </aside>
+
+
+
         <!--header-->
         <header>
             <div class="header-top mobile-hide">
@@ -31,26 +46,9 @@
                         <div class="right">
                             <ul class="flexitem">
                                 <li class="main-links">
-                                <li><a href="">登入</a></li>
-                                <li><a href="">我的帳號</a></li>
-                                <li><a href="">賬單追蹤</a></li>
-                                <li><a href="">NTD <span class="icon-small"><i
-                                                class="ri-arrow-down-s-fill"></i></span></a>
-                                    <ul>
-                                        <li class="current"><a href="#">NTD</li>
-                                        <li><a href="#">RMB</li>
-                                        <li><a href="#">USD</li>
-                                        <li><a href="#">MOP</li>
-                                    </ul>
-                                </li>
-                                <li><a href="">中文<span class="icon-small"><i
-                                                class="ri-arrow-down-s-fill"></i></i></span></a>
-                                    <ul>
-                                        <li class="current"><a href="#">中文</li>
-                                        <li><a href="#">ENG</li>
-                                    </ul>
-                                </li>
-                                <!--https://remixicon.com/-->
+                                    <li><a href="">登入</a></li>
+                                    <li><a href="">我的帳號</a></li>
+                                    <li><a href="">賬單追蹤</a></li>
                                 </li>
                             </ul>
                         </div>
@@ -64,7 +62,7 @@
                     <div class="wrapper flexitem">
                         <a href="#" class="trigger desktop-hide"><span class="i ri-menu-2-line"></span></a>
                         <div class="left flexitem">
-                            <div class="logo"><a href="/"><samp class="corcle">歪國零食</samp></a></div>
+                            <div class="logo"><a href="/"><samp class="circle">歪國零食</samp></a></div>
                             <nav class="mobile-hide">
                                 <ul class="flexitem second-links">
                                     <li><a href="#">首頁</a></li>
@@ -109,6 +107,8 @@
                                                             </ul>
                                                         </div>
                                                     </div>
+
+                                                    
 
                                                     <div class="flexcol">
                                                         <div class="row">
@@ -183,6 +183,7 @@
                     <div class="wrapper flexitem">
                         <div class="left">
                             <div class="dpt-cat">
+
                                 <div class="dpt-head">
                                     <div class="main-text">ALL Departments</div>
                                     <div class="mini-text mobile-hide">Total 1059 Products</div>
@@ -190,23 +191,17 @@
                                         <i class="ri-menu-3-line ri-xl"></i>
                                     </a>
                                 </div>
+
                                 <!-- 左側menu -->
+
                                 <div class="dpt-menu">
                                     <ul class="second-links">
-                                        <li class="has-child commodity">
-                                            <a href="#">
-                                                <div class="icon-large"><i class="ri-store-2-line"></i></div>
-                                                全站商品
-                                                <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
-                                            </a>
-                                        </li>
-
                                         <li class="has-child popularity">
                                             <a href="#">
                                                 <div class="icon-large"><i class="ri-bard-line"></i></div>
                                                 人氣商品推薦
-                                                <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
                                             </a>
+
                                         </li>
 
                                         <li class="has-child store">
@@ -215,13 +210,40 @@
                                                 店長推薦
                                                 <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
                                             </a>
+                                            <ul>
+                                                <li><a href="#">好吃的</a></li>
+                                                <li><a href="#">特別的</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="has-child commodity">
+                                            <a href="#">
+                                                <div class="icon-large"><i class="ri-store-2-line"></i></div>
+                                                全站商品
+                                                <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+                                            </a>
+                                            <div class="mega">
+                                                <div class="flexcol">
+                                                    <div class="row">
+                                                        <h4><a href="#">商品分類</a></h4>
+                                                        <ul>
+                                                            <li><a href="#">糖果</a></li>
+                                                            <li><a href="#">薯片</a></li>
+                                                            <li><a href="#">巧克力</a></li>
+                                                            <li><a href="#">餅乾</a></li>
+                                                            <li><a href="#">果干</a></li>
+                                                            <li><a href="#">海苔</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </li>
 
                                         <li class="has-child coin">
                                             <a href="#">
                                                 <div class="icon-large"><i class="ri-coins-line"></i></div>
                                                 銅板專區
-                                                <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+                                                
                                             </a>
                                         </li>
 
@@ -229,7 +251,7 @@
                                             <a href="#">
                                                 <div class="icon-large"><i class="ri-alarm-warning-line"></i></div>
                                                 本週新品
-                                                <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+                                                
                                             </a>
                                         </li>
 
@@ -239,6 +261,13 @@
                                                 國家選擇
                                                 <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
                                             </a>
+                                            <ul>
+                                                <li><a href="#">美國</a></li>
+                                                <li><a href="#">丹麥</a></li>
+                                                <li><a href="#">瑞士</a></li>
+                                                <li><a href="#">泰國</a></li>
+                                            </ul>
+
                                         </li>
 
                                         <li class="has-child taste">
@@ -247,6 +276,12 @@
                                                 口味選擇
                                                 <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
                                             </a>
+                                            <ul>
+                                                <li><a href="#">甜的</a></li>
+                                                <li><a href="#">辣的</a></li>
+                                                <li><a href="#">苦的</a></li>
+                                                <li><a href="#">酸的</a></li>
+                                            </ul>
                                         </li>
 
                                         <li class="has-child type">

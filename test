@@ -1,0 +1,65 @@
+<div class="mega">
+                                                <div class="flexcol">
+                                                    <div class="row">
+                                                        <h4><a href="#">商品分類</a></h4>
+                                                        <ul>
+                                                            <li><a href="#">糖果</a></li>
+                                                            <li><a href="#">薯片</a></li>
+                                                            <li><a href="#">巧克力</a></li>
+                                                            <li><a href="#">餅乾</a></li>
+                                                            <li><a href="#">果干</a></li>
+                                                            <li><a href="#">海苔</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+
+
+
+
+
+
+
+    .dpt-menu .has-child > ul, .dpt-menu .mega {
+        position: absolute;
+        top: 0;
+        left: var(--percent100);
+        width: var(--percent100);
+        height: auto;
+        min-height: var(--percent100);
+        padding: 1.5em;
+        font-size: var(--font-small);
+        line-height: 2.5em;
+        border: 1px solid var(--border-color);
+        border-top: 0;
+        display: none;
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        background-size: auto;
+
+    }
+
+    .dpt-menu .mega {
+        display: block;
+    }
+
+    .dpt-menu .has-child >:where(ul,.mega)::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .dpt-menu .mega {
+        width: auto;
+        min-width: var(--percent100);
+    }
+
+    .dpt-menu .has-child:hover .mega{
+        display: flex;
+    }
