@@ -1,0 +1,101 @@
+*{
+    
+}
+
+.container {
+	margin: 0 auto;
+	max-width: calc(100% - 100px);
+	width: 1200px;
+    max-width: 100%;
+}
+
+.goodsline1 {
+    position: relative;
+    top: 150px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    overflow: visible;
+    height: 500px;
+    padding-bottom: 0;
+}
+
+.goodsline2 {
+    position: relative;
+    margin: auto;
+    display: flex;
+    /* overflow: visible; */
+    /* margin-top: 45px; */
+    top: 150px;
+    height: 500px;
+    justify-content: center;
+    padding-bottom: 0;
+
+
+}
+
+.goodscard {
+    position: relative;
+    top: 20px; /* 商品項與header的距離 */
+    margin: 2em;
+    width: 350px;
+    height: 350px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: ;
+}
+
+.goodsphoto {
+    
+    width: 350px;
+    height: 350px;
+
+}
+
+
+.img_description_layer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: rgb(155, 155, 155);
+    background: rgba(184, 92, 92, 0.565);
+    visibility: hidden;
+    opacity: 0.6;
+    transition: opacity 0.6s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.goodscard:hover .img_description_layer {
+    visibility: visible;
+    opacity: 1;
+}
+
+.img_description_text {
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.3s;
+    transform: translateY(1em);
+}
+
+.goodscard:hover .img_description_text {
+    transform: translate(0em);
+}
+
+.name-font {
+    font-weight: 400;
+    font-size: 18px;
+    font-family: Microsoft JhengHei;
+    color: #464545;
+}
+
+.price-font {
+
+    color: #090909;
+    font-weight: bold;
+    font-family: Microsoft JhengHei;
+    /* top: 0px; */
+}
+
