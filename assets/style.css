@@ -148,7 +148,7 @@ h4{
 
 .icon-small{
     font-size: 1.25em;
-    margin: auto;
+    margin-left: auto;
 }
 
 .icon-large{
@@ -335,6 +335,10 @@ nav .fly-item{
     z-index: 10;
 }
 
+.dpt-menu{
+    align-items: center;
+}
+
 .dpt-cat .dpt-head{
     position: relative;
     width: 300px;
@@ -357,9 +361,6 @@ nav .fly-item{
     height: 60px;
     width: 60px;
 }
-
-
-
 
 
 .header-main .right{
@@ -408,7 +409,15 @@ form.search button:hover{
 }
 
 
-
+.dpt-menu{
+    position: absolute;
+    top: var(--percent100);
+    width: 300px;
+    background-color: var(--white-color) ;
+    border: 1px solid var(--border-color);
+    border-bottom: 0;
+    border-top: 0;
+}
 
 /*-------------------------HEADER-------------------------*/
 
@@ -432,7 +441,7 @@ form.search button:hover{
 
 
 
-@media screen and (min-width: 992px){
+@media screen and (min-width: 990px){
     .container{
         padding: 0 2em;
     }
