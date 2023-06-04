@@ -347,6 +347,7 @@ nav .fly-item{
     border-radius: 7px 7px 0 0;
     color: var(--white-color);
     margin-bottom: -2.15em;
+    align-items: right;
 }
 
 .dpt-cat .dpt-head .mini-text{
