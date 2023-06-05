@@ -1,6 +1,6 @@
-*{
+/* *{
     
-}
+} */
 
 .container {
 	margin: 0 auto;
@@ -41,7 +41,7 @@
     width: 350px;
     height: 350px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    border: ;
+    /* border: ; */
 }
 
 .goodsphoto {
