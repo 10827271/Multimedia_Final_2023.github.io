@@ -346,7 +346,7 @@ nav .fly-item{
     background-color: var(--primary-color);
     border-radius: 7px 7px 0 0;
     color: var(--white-color);
-    margin-bottom: -2.15em;
+    margin-bottom: -2em;
     align-items: right;
 }
 
@@ -356,7 +356,7 @@ nav .fly-item{
 
 .dpt-cat .dpt-trigger{
     position: absolute;
-    right: -30px;
+    right: -40px;
     top: 0;
     padding: 1.3em;
     height: 60px;
@@ -376,6 +376,8 @@ nav .fly-item{
 .dpt-menu .has-child li a:hover{
     text-decoration: underline;
 }
+
+
 
 .header-main .right{
     flex: 1;
@@ -430,22 +432,32 @@ form.search button:hover{
     background-color: var(--white-color);
     overflow-y: auto;
     z-index: 1000;
+    transform: translateX(-100%);
+    visibility: hidden;
+    transition: transform .4s, visbility .4s;
+    will-change: transform, visbility;
+}
+
+.showmenu .site-off{
+    transform: translateX(0);
+    visibility: visible;
+    transform: transform .4s 0s visbility 0s 0s;
 }
 
 .off-canvas {
     width: var(--percent100);
     height: var(--percent100);
     touch-action: auto;
-    padding: 1.5em;
+    padding: auto;
 }
 
 .off-canvas .canvas-head {
     color: var(--white-color);
     justify-content: space-between;
     padding: 1.5em;
-    margin: -1.5em -1.5em 1.5em;
+    margin: 0 -1.5em 1.5em;
     background-color: var(--secondary-dark-color);
-    border-bottom-right-radius: 160px 25px;
+    border-bottom-right-radius: 180px 25px;
 }
 
 .off-canvas .canvas-head .logo {
@@ -455,8 +467,8 @@ form.search button:hover{
 
 .t-close {
     font-size: 1.25em;
-    width: 32px;
-    height: 32px;
+    width: 30px;
+    height: 30px;
     border-radius: var(--percent50);
     background-color: var(--secondary-dark-color);
     color: var(--white-color);
@@ -478,7 +490,7 @@ form.search button:hover{
     border-radius: 7px 7px 0 0;
 }
 
-.off-canvas .has-child >:where(ul, .mega){
+.off-canvas .has-child > :where(ul, .mega){
     font-size: var(--font-small);
     font-weight: 300;
     line-height: 28px;
@@ -487,7 +499,11 @@ form.search button:hover{
     height: auto;
     max-height: 0;
     overflow: hidden;
-    transition: max-height .3s cubic-bezier(0.215,0.610,0.355, 1);
+    transition: max-height .3s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.off-canvas .expand > :where(ul, .meag) {
+    max-height: 2000px;
 }
 
 .off-canvas .thetop-nav ul, .off-canvas nav > ul {
@@ -521,11 +537,46 @@ form.search button:hover{
     display: none;
 }
 
+.off-canvas .thetop-nav .right ul ul li a {
+    padding: 0.5em;
+    border: 1px solid var(--border-color);
+    line-height: 16px;
+    margin: 0 0.5em 0.5em 0;
+}
 
 
 
 /*-------------------------HEADER-------------------------*/
  
+/*-------------------------SLIDER-------------------------*/
+
+.slider > div > .wrapper {
+    width: calc(100% - (300px + 2em));
+    margin-left: 500px;
+}
+
+.slider .item {
+    position: relative;
+    height: 400px;
+}
+
+.slider .text-content {
+    position: relative;
+    height: var(--percent100);
+    justify-content: flex-end;
+    padding: 0 0 10% 10%;
+    z-index: 1;
+}
+
+.slider h4 {
+    font-size: var(--font-small);
+    font-weight: 700;
+    width: fit-content;
+    padding: 4px 10px;
+    background: var(--dark-color);
+    color: var(--white-color);
+    border-radius: 4px;
+}
 
 
 
@@ -538,12 +589,7 @@ form.search button:hover{
 
 
 
-
-
-
-
-
-
+/*-------------------------SLIDER-------------------------*/
 
 
 @media screen and (min-width: 990px){
@@ -652,14 +698,35 @@ form.search button:hover{
         height: auto;
         min-height: var(--percent100);
         padding: 1.5em;
-        padding: 1.5em;
         font-size: var(--font-small);
         line-height: 2.5em;
         border: 1px solid var(--border-color);
         border-top: 0;
         display: none;
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        background-size: auto;
     }
 
+    .dpt-menu .store ul {
+        background-color: var(--white-color);
+    }
+
+    .dpt-menu .commodity .mega {
+        background-color: var(--white-color);
+    }
+
+    .dpt-menu .nation ul {
+        background-color: var(--white-color);
+    }
+
+    .dpt-menu .taste ul {
+        background-color: var(--white-color);
+    }
+
+    .dpt-menu .type ul {
+        background-color: var(--white-color);
+    }
 
     .dpt-menu .has-child > :where(ul,.mega)::before {
         content: '';
