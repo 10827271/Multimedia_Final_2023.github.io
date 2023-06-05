@@ -548,11 +548,13 @@ form.search button:hover{
 
 /*-------------------------HEADER-------------------------*/
  
-/*-------------------------SLIDER-------------------------*/
+/*-------------------------SLIDER-------------------------
+
 
 .slideshow-container {
     width: calc(100% - (200px +2em));
     margin-left: auto;
+    right: 100em;
   }
   
   .slide {
@@ -561,25 +563,39 @@ form.search button:hover{
   
   .slide img {
     position: relative;
-    height: 474px;
+    height: 400px;
   }
   
   .slide.active {
     display: block;
   }
   
-  .controls {
-    text-align: center;
-    margin-top: 10px;
+*/
+
+.main .slideshow-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
   }
   
-  .controls button {
-    margin: 0 5px;
+.slide {
+    position: absolute;
+    top: 10;
+    right: 20%; /* Align to the right */
+    width: 20%;
+    height: 50%; /* Adjust the height as needed */
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
   }
   
-
-
-
+.slide.active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
 
 
 
