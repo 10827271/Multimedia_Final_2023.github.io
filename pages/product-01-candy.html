@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>歪國零食</title>
+    <title>歪國零食 product-detail01</title>
     <link rel="stylesheet" href="../assets/style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/all-shop.css">
+    <link rel="stylesheet" href="../assets/css/product-detail.css">
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,12 +18,12 @@
 </head>
 
 <body>
-    <div id="page" class="site page-home">
+    <div id="page" class="site">
 
         <aside class="site-off desktop-hide">
             <div class="off-canvas">
-                <div class="canvas-head flexitem">
-                    <div class="logo"><a href="/">歪國零食</a></div>
+                <div class="canvas-head">
+                    <div class="logo"><a href="./index.html"><samp class="circle">歪國零食</samp></a></div>
                     <a href="#" class="t-close flexcenter"><i class="ri-close-line"></i></a>
                 </div>
                 <div class="departments"></div>
@@ -46,9 +49,9 @@
                         <div class="right">
                             <ul class="flexitem">
                                 <li class="main-links">
-                                    <li><a href="">登入</a></li>
-                                    <li><a href="">我的帳號</a></li>
-                                    <li><a href="">賬單追蹤</a></li>
+                                <li><a href="">登入</a></li>
+                                <li><a href="">我的帳號</a></li>
+                                <li><a href="">賬單追蹤</a></li>
                                 </li>
                             </ul>
                         </div>
@@ -78,7 +81,7 @@
                                                         <div class="row">
                                                             <h4>candy</h4>
                                                             <ul>
-                                                                <li><a href="./product-1.html">candy1</a></li>
+                                                                <li><a href="#">candy1</a></li>
                                                                 <li><a href="#">candy2</a></li>
                                                                 <li><a href="#">candy3</a></li>
                                                             </ul>
@@ -108,7 +111,7 @@
                                                         </div>
                                                     </div>
 
-                                                    
+
 
                                                     <div class="flexcol">
                                                         <div class="row">
@@ -128,7 +131,7 @@
                                                             <div class="media">
                                                                 <div class="thumbnail objest-cover">
                                                                     <a href="">
-                                                                        <img src="/assets/Images/snack/chips0001.png"
+                                                                        <img src="/assets/Images/chips/chips0001.png"
                                                                             alt="">
                                                                     </a>
                                                                 </div>
@@ -183,6 +186,7 @@
                     <div class="wrapper flexitem">
                         <div class="left">
                             <div class="dpt-cat">
+
                                 <div class="dpt-head">
                                     <div class="main-text">ALL Departments</div>
                                     <div class="mini-text mobile-hide">Total 1059 Products</div>
@@ -193,10 +197,10 @@
 
                                 <!-- 左側menu -->
 
-                                <div class="dpt-menu">
+                                <!-- <div class="dpt-menu">
                                     <ul class="second-links">
                                         <li class="has-child popularity">
-                                            <a href="./product-1.html">
+                                            <a href="#">
                                                 <div class="icon-large"><i class="ri-bard-line"></i></div>
                                                 人氣商品推薦
                                             </a>
@@ -242,7 +246,7 @@
                                             <a href="#">
                                                 <div class="icon-large"><i class="ri-coins-line"></i></div>
                                                 銅板專區
-                                                
+
                                             </a>
                                         </li>
 
@@ -250,7 +254,7 @@
                                             <a href="#">
                                                 <div class="icon-large"><i class="ri-alarm-warning-line"></i></div>
                                                 本週新品
-                                                
+
                                             </a>
                                         </li>
 
@@ -291,7 +295,7 @@
                                             </a>
                                         </li>
                                     </ul>
-                                </div>
+                                </div> -->
                             </div>
 
 
@@ -313,38 +317,115 @@
         <!--header-->
 
         <!--main-->
-        
         <main>
+            <!-- Shop-details start -->
+            <section class="shop-details-area pb-80">
+                <div class="container">
 
-            <div class="slideshow-container">
-                <div class="slide">
-                  <img src="/assets/Images/snack/candy_1.jpg" alt="Image 1">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-6 order-1 order-lg-1">
+                            <!-- 商品詳細圖片開始 -->
+                            <div class="pro-img">
+                                <div class="tab-content" id="myTabContent"> <!-- 這裡換圖片 -->
+                                    <div class="tab-pane fade show active" id="home5" role="tabpanel"
+                                        aria-labelledby="home-tab5"><img src="/assets/images/item-img/sporty1.png"
+                                            class="img-fluid" alt=""></div>
+
+                                    <div class="tab-pane fade" id="profile5" role="tabpanel"
+                                        aria-labelledby="profile-tab5">
+                                        <img src="../assets/Images/snack/candy_1.jpg" class="img-fluid" alt="">
+                                    </div>
+
+                                </div>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 order-3 order-lg-2">
+                            <div class="goodstext">
+                                <span></span>
+                                <h4 class="title">Albanese World's Best 軟糖零食包,12 種口味小熊軟糖,50 個迷你糖果包 網球</h4>
+                                <div class="pro-rating pb-40">
+                                    <h6 class="title">賣家:@benny</h6>
+
+                                    <a href="#"><i class="fas fa-star"></i></a>
+                                    <a href="#"><i class="fas fa-star"></i></a>
+                                    <a href="#" class="review">(5 則留言)</a>
+
+
+                                </div>
+                                <div class="pro-social mb-45">
+                                    <a href="#"><img src="static/picture/pro-details-social.jpg" class="img-fluid"
+                                            alt=""></a>
+                                </div>
+                                <div class="about-pro">
+                                    <ul class="mb-40">
+                                        <li>感受舒適，助力發揮。</li>
+                                        <li>佩戴舒適，助你專注運動。</li>
+                                        <li>部分採用再生材料打造，助力地球環保。</li>
+                                        <li>保護環境，從此做起。採用再生面料打造，力求減少塑膠廢棄物污染。</li>
+
+                                    </ul>
+
+                                </div>
+                                <div class="pro-code pt-25">
+                                    <ul>
+
+                                        <li>Tag: <span>運動用品</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="add-to-cart">
+                            <div class="cart-title">
+                                <h6>商品狀態 <span>有存貨</span></h6>
+                            </div>
+                            <div class="price mt-15 mb-20">
+                                <span>原價$500.00</span>
+                                <h4>$200.00</h4>
+                            </div>
+                            <form action="#">
+                                <div class="field">
+                                    <label>數量:</label>
+                                    <input type="number">
+                                </div>
+                                <div class="field">
+                                    <label>顏色:</label>
+                                    <select name="select">
+                                        <option value="1">黑</option>
+                                        <option value="2">白</option>
+                                        <option value="3">紅</option>
+                                    </select>
+                                </div>
+                            </form>
+                            &emsp;
+                            <a href="#" class="cart-button">加入購物車</a>
+                            <a href="#" class="buy-button">立即購買</a>
+                            <div class="last pt-15">
+
+                                <a href="#">願望清單</a>
+                            </div>
+                        </div>
+                        <!-- 這裏add-to-cart結束 -->
+                    </div>
                 </div>
-                <div class="slide">
-                  <img src="/assets/Images/snack/candy_2.jpg" alt="Image 2">
-                </div>
-                <div class="slide">
-                  <img src="/assets/Images/snack/candy_3.jpg" alt="Image 3">
-                </div>
-            </div>
+    </div>
+    </section>
+    <!-- Shop-details end -->
+    </main>
+    <!--main-->
 
+    <!--footer-->
+    <footer>
 
-
-        </main>
-    
-        <!--main-->
-
-        <!--footer-->
-        <footer>
-
-        </footer>
-        <!--footer-->
+    </footer>
+    <!--footer-->
 
     </div>
 
 
 
-    <script src="/assets/script.js"></script>
+    <script src="../assets/script.js"></script>
 </body>
 
 </html>

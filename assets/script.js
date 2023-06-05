@@ -57,3 +57,10 @@ function nextSlide() {
 
 // Set interval to automatically switch slides every 5 seconds
 setInterval(nextSlide, 5000);
+
+
+const dptButton = document.querySelector('.dpt-cat .dpt-trigger'),
+      dptClass = document.querySelector('.site');
+dptButton.addEventListener('click', function() {
+    dptClass.classList.toggle('showdpt')
+})

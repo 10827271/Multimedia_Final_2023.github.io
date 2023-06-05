@@ -548,29 +548,8 @@ form.search button:hover{
 
 /*-------------------------HEADER-------------------------*/
  
-/*-------------------------SLIDER-------------------------
+/*-------------------------SLIDER-------------------------*/
 
-
-.slideshow-container {
-    width: calc(100% - (200px +2em));
-    margin-left: auto;
-    right: 100em;
-  }
-  
-  .slide {
-    display: none;
-  }
-  
-  .slide img {
-    position: relative;
-    height: 400px;
-  }
-  
-  .slide.active {
-    display: block;
-  }
-  
-*/
 
 .main .slideshow-container {
     position: relative;
@@ -597,13 +576,60 @@ form.search button:hover{
   }
   
 
-
-
-
-
-
-
 /*-------------------------SLIDER-------------------------*/
+
+
+
+
+
+/*---page single----*/
+
+.page-home .dpt-cat .dpt-trigger,
+.dpt-trigger .ri-close-line,
+.showdpt .dpt-trigger .ri-menu-3-line {
+    display: none;
+}
+
+.showdpt .dpt-trigger .ri-close-line {
+    display:  block;
+}
+
+
+
+
+
+
+
+
+
+
+/*---page single----*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (min-width: 990px){
@@ -764,5 +790,13 @@ form.search button:hover{
         width: calc(100% - (200px +2em));
         margin-left: auto;
     }
+
+
+    #page:not(.allproduct) .dpt-menu {
+        display: none;
+    }
+
 }
+
+
     
