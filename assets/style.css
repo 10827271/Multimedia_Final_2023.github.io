@@ -550,35 +550,33 @@ form.search button:hover{
  
 /*-------------------------SLIDER-------------------------*/
 
-.slider > div > .wrapper {
-    width: calc(100% - (300px + 2em));
-    margin-left: 500px;
-}
-
-.slider .item {
+.slideshow-container {
+    width: calc(100% - (200px +2em));
+    margin-left: auto;
+  }
+  
+  .slide {
+    display: none;
+  }
+  
+  .slide img {
     position: relative;
-    height: 400px;
-}
-
-.slider .text-content {
-    position: relative;
-    height: var(--percent100);
-    justify-content: flex-end;
-    padding: 0 0 10% 10%;
-    z-index: 1;
-}
-
-.slider h4 {
-    font-size: var(--font-small);
-    font-weight: 700;
-    width: fit-content;
-    padding: 4px 10px;
-    background: var(--dark-color);
-    color: var(--white-color);
-    border-radius: 4px;
-}
-
-
+    height: 474px;
+  }
+  
+  .slide.active {
+    display: block;
+  }
+  
+  .controls {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .controls button {
+    margin: 0 5px;
+  }
+  
 
 
 
@@ -744,6 +742,11 @@ form.search button:hover{
 
     .dpt-menu .has-child:hover .mega{
         display: flex;
+    }
+
+    .slideshow-container {
+        width: calc(100% - (200px +2em));
+        margin-left: auto;
     }
 }
     

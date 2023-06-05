@@ -33,3 +33,27 @@ function toggle(e){
     if (this.closest('.has-child').classList != 'expand');
     this.closest('.has-child').classList.toggle('expand')
 }
+
+// Get all slide elements
+var slides = document.getElementsByClassName('slide');
+
+// Set initial slide index
+var currentSlideIndex = 0;
+
+// Show the first slide
+slides[currentSlideIndex].classList.add('active');
+
+// Function to show next slide
+function nextSlide() {
+  // Hide the current slide
+  slides[currentSlideIndex].classList.remove('active');
+
+  // Increment the slide index
+  currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+
+  // Show the next slide
+  slides[currentSlideIndex].classList.add('active');
+}
+
+// Set interval to automatically switch slides every 5 seconds
+setInterval(nextSlide, 5000);
