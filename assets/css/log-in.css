@@ -1,0 +1,29 @@
+.wthree-container{
+    font-size: large;
+    float: right;
+    background-color: rgb(155, 232, 232);
+    padding: 10px;
+}
+
+.sign-in > input{
+    color: aliceblue;
+    width: 150px;
+    height: 45px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 0;
+    margin: 2px;
+    background-color: rgb(220, 99, 128);
+}
+
+.sign-in >a input{
+    color: aliceblue;
+    width: 150px;
+    height: 45px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 0;
+    margin: 2px;
+    background-color: rgb(220, 99, 128);
+}
+
