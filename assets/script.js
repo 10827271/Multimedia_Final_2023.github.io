@@ -34,6 +34,7 @@ function toggle(e){
     this.closest('.has-child').classList.toggle('expand')
 }
 
+
 // Get all slide elements
 var slides = document.getElementsByClassName('slide');
 
@@ -59,8 +60,3 @@ function nextSlide() {
 setInterval(nextSlide, 5000);
 
 
-const dptButton = document.querySelector('.dpt-cat .dpt-trigger'),
-      dptClass = document.querySelector('.site');
-dptButton.addEventListener('click', function() {
-    dptClass.classList.toggle('showdpt')
-})

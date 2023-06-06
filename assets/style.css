@@ -584,17 +584,6 @@ form.search button:hover{
 
 /*---page single----*/
 
-.page-home .dpt-cat .dpt-trigger,
-.dpt-trigger .ri-close-line,
-.showdpt .dpt-trigger .ri-menu-3-line {
-    display: none;
-}
-
-.showdpt .dpt-trigger .ri-close-line {
-    display:  block;
-}
-
-
 
 
 
@@ -791,10 +780,6 @@ form.search button:hover{
         margin-left: auto;
     }
 
-
-    #page:not(.allproduct) .dpt-menu {
-        display: none;
-    }
 
 }
 
