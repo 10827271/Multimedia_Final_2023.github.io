@@ -91,6 +91,7 @@ h4{
 
 .container{
     max-width: 1280px;
+    /* margin-top: 100px; */
     margin: 0 auto;
     padding: 0 0.938em;
 }
@@ -555,7 +556,7 @@ form.search button:hover{
     position: relative;
     width: 100%;
     max-width: 800px;
-    margin: 0 ;
+    margin: 0 auto;
     overflow: hidden;
   }
   
@@ -594,27 +595,10 @@ form.search button:hover{
 
 /*---page single----*/
 
-/*---footer----*/
-
-footer {
-    background-color: #f2f2f2;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .container {
-    max-width: 960px;
-    margin: 0 auto;
-  }
-  
-  p {
-    margin: 0;
-  }
-  
 
 
 
-/*---footer----*/
+
 
 
 
@@ -800,5 +784,22 @@ footer {
 
 }
 
-
+/* -----------------------------------------------------------------------footer------------------------------------ */
     
+.footer-block{
+    position: relative;
+    text-align: center;
+}
+
+.footer-block-index{
+    position: relative;
+    margin: auto;
+    display: flex;
+    overflow: visible;
+    /* margin-top: 45px; */
+    top: 350px;
+    height: 80px;
+    justify-content: center;
+    padding-bottom: 0;
+    /* background-color: antiquewhite; */
+}
