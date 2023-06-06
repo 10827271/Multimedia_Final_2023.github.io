@@ -1,5 +1,5 @@
 img{
-    width: 40%;
+    width: 120%;
     background-color: azure;
     display: flex;
 }
@@ -22,9 +22,10 @@ img{
 .goodstext {
     position: relative;
     width: 800px;
-    top: -10px;
-    margin: auto;
-    display: flex;
+    top: 80px;
+    margin-left: 100px;
+    /* margin: auto; */
+    display: grid;
     justify-content: center;
     overflow: visible;
     height: 200px;
@@ -34,13 +35,31 @@ img{
 
 .add-to-cart {
     position: relative;
-    margin: auto;
-    display: flex;
+    /* margin: auto; */
+    display: grid;
     /* overflow: visible; */
-    /* margin-top: 45px; */
-    top: 0px;
-    height: 100px;
-    justify-content: center;
+    margin-top: 200px;
+    margin-left: 100px;
+
+    /* top: 0px; */
+    /* left: ; */
+    width: 500px;
+    height: 200px;
+    /* justify-content: center; */
     padding-bottom: 0;
     background-color: aquamarine;
+}
+
+.product-row{
+    display: grid;
+    grid-template-rows: repeat(4, 100px);
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.discount-price{
+    color: var(--primary-color);
+}
+
+.cart-button:hover{
+    background-color: var(--primary-color);
 }
