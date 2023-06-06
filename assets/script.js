@@ -60,3 +60,6 @@ function nextSlide() {
 setInterval(nextSlide, 5000);
 
 
+const year = new Date().getFullYear();
+const copyright = document.querySelector('footer p');
+copyright.innerHTML = `&copy; ${year} Your Website. All rights reserved.`;

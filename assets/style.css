@@ -555,7 +555,7 @@ form.search button:hover{
     position: relative;
     width: 100%;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 ;
     overflow: hidden;
   }
   
@@ -594,10 +594,27 @@ form.search button:hover{
 
 /*---page single----*/
 
+/*---footer----*/
+
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  p {
+    margin: 0;
+  }
+  
 
 
 
-
+/*---footer----*/
 
 
 

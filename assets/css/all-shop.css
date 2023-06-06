@@ -11,14 +11,14 @@
 
 .goodsline1 {
     position: relative;
-    top: 150px;
+    top: 350px;
     margin: auto;
     display: flex;
     justify-content: center;
     overflow: visible;
     height: 500px;
     padding-bottom: 0;
-    background-color: antiquewhite;
+    /*background-color: antiquewhite;*/
 }
 
 .goodsline2 {
@@ -27,7 +27,7 @@
     display: flex;
     overflow: visible;
     /* margin-top: 45px; */
-    top: 150px;
+    top: 350px;
     height: 500px;
     justify-content: center;
     padding-bottom: 0;
