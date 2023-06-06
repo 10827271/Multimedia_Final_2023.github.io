@@ -132,6 +132,42 @@ h4 {
     text-align: center;
 }
 
+.menber-line1{
+    position: relative;
+    top: 50px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    overflow: visible;
+    height: 300px;
+    width: 800px;
+    padding-bottom: 90;
+    /* background-color: antiquewhite; */
+}
+
+.menber-card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(216, 164, 96);
+}
+
+.member-photo{
+    background-color: antiquewhite;
+    width: 200px;
+    border-radius: 50%;
+}
+
+/* .member-photo:hover{
+    background-color: antiquewhite;
+    width: 200px;
+    border-radius: 50%;
+} */
+
+.member-info{
+    margin: 40px 60px;
+
+}
 
 .column {
     margin-left: -0.938em;
