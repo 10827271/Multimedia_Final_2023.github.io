@@ -147,22 +147,12 @@
 
                                     <li><a href="#">關於我們</a></li>
 
-                                    <li>
-                                        <a href="#">熱買商品
-                                            <div class="fly-item"><span>Hot!</span></div>
-                                        </a>
-                                    </li>
                                 </ul>
                             </nav>
                         </div>
 
                         <div class="right">
                             <ul class="flexitem second-links">
-                                <li class="mobile-hide"><a href="#">
-                                        <div class="icon-large"><i class="ri-heart-line"></i></div>
-                                        <div class="fly-item"><span class="item-number">0</span></div>
-                                    </a></li>
-
                                 <li><a href="#">
                                         <div class="icon-large">
                                             <i class="ri-shopping-cart-line"></i>
@@ -341,51 +331,43 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-12 order-3 order-lg-2">
+                        <div>
                             <div class="goodstext">
                                 <span></span>
+                                
                                 <h3 class="title">Albanese World's Best 軟糖零食包,12 種口味小熊軟糖,50 個迷你糖果包 網球</h3>
-                                <div class="pro-rating pb-40">
-                                    <h6 class="title">賣家:@benny</h6>
+                            
 
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#"><i class="fas fa-star"></i></a>
-                                    <a href="#" class="review">(5 則留言)</a>
-
-
-                                </div>
-                                <div class="pro-social mb-45">
-                                    <a href="#"><img src="static/picture/pro-details-social.jpg" class="img-fluid"
-                                            alt=""></a>
-                                </div>
                                 <div class="about-pro">
-                                    <ul class="mb-40">
+                                    <ul>
                                         <li>感受舒適，助力發揮。</li>
                                         <li>佩戴舒適，助你專注運動。</li>
                                         <li>部分採用再生材料打造，助力地球環保。</li>
                                         <li>保護環境，從此做起。採用再生面料打造，力求減少塑膠廢棄物污染。</li>
-
                                     </ul>
 
                                 </div>
-                                <div class="pro-code pt-25">
+                                <div>
                                     <ul>
-
-                                        <li>Tag: <span>運動用品</span></li>
-
-                                        <h6>商品狀態 <span>有存貨</span></h6>
-                                        &emsp;
+                                        <li>Tag: <span>運動用品</span></li><br/>
+                                        <h6>商品狀態 <span>有存貨</span></h6><br/>
                                 </div>
-                                <div class="price mt-15 mb-20">
+
+                                <div class="price">
                                     <span>原價$500.00</span>
-                                    <div class="discount-price"> <h4>$200.00</h4></div>
+
+                                    <div class="discount-price">
+                                        <h4>$200.00</h4>
+                                    </div>
                                 </div>
+
                                 <form action="#">
-                                    <div class="field">
+                                    <div class="price">
                                         <label>數量:</label>
                                         <input type="number">
                                     </div>
-                                    <div class="field">
+
+                                    <div class="price">
                                         <label>口味:</label>
                                         <select name="select">
                                             <option value="1">藍</option>
@@ -394,15 +376,65 @@
                                         </select>
                                     </div>
                                 </form>
-                                &emsp;
+                                <br/>
                                 <div class="cart-button">
                                     <a href="#" class="cart-button">加入購物車</a>
                                 </div>
+
                                 <div class="cart-button">
                                     <a href="#" class="buy-button">立即購買</a>
                                 </div>
-                                </ul>
+
+                                <section id="product-reviews">
+                                    <h3>產品評價</h3>
+                                    <div class="review">
+                                      <div class="review-header">
+                                        <h4>用戶A</h4>
+                                        <div class="rating">
+                                          <span class="star">&#9733;</span>
+                                          <span class="star">&#9733;</span>
+                                          <span class="star">&#9733;</span>
+                                          <span class="star">&#9733;</span>
+                                          <span class="star">&#9733;</span>
+                                        </div>
+                                      </div>
+                                      <p class="review-content">這是一個很好的產品。</p>
+                                    </div>
+                                    <div class="review">
+                                      <div class="review-header">
+                                        <h4>用戶B</h4>
+                                        <div class="rating">
+                                          <span class="star">&#9733;</span>
+                                          <span class="star">&#9733;</span>
+                                          <span class="star">&#9733;</span>
+                                          <span class="star">&#9733;</span>
+                                          <span class="star">&#9733;</span>
+                                        </div>
+                                      </div>
+                                      <p class="review-content">非常喜歡這個產品！</p>
+                                    </div>
+                                    <!-- 其他評價 -->
+                                </section>
+    
+                                <div id="related-products">
+                                    <h3>相關產品</h3>
+                                    <div class="product">
+                                      <img src="../assets/Images/snack/candy_1.jpg" alt="相關產品1">
+                                      <h4>相關產品名稱1</h4>
+                                      <p>價格：$15</p>
+                                    </div>
+                                    <div class="product">
+                                      <img src="../assets/Images/snack/candy_3.jpg" alt="相關產品2">
+                                      <h4>相關產品名稱2</h4>
+                                      <p>價格：$18</p>
+                                    </div>
+                                    <!-- 其他相關產品 -->
+                                </div>
+
+
                             </div>
+
+
                         </div>
                     </div>
 
@@ -417,9 +449,17 @@
     <!--main-->
 
     <!--footer-->
-    <footer>
+    <div class="footer-block">
+        <footer>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <div class="small text-center text-muted fst-italic">
+                <p>©2023 by Collations Pays Tordues. All rights reserved.</p>
+        <br>
+            </div>
+        </footer>
 
-    </footer>
+
+    </div>
     <!--footer-->
 
     </div>

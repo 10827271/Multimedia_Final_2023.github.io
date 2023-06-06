@@ -4,15 +4,6 @@ img{
     display: flex;
 }
 
-/* .about-pro{
-    color: #616161;
-    font-size: 13px;
-    font-weight: 400;
-    margin-bottom: 5px;
-    position: relative;
-    padding-left: 15px;
-    background-color: rgb(159, 185, 209);
-} */
 
 .pro-content{
     position: absolute;
@@ -30,24 +21,7 @@ img{
     overflow: visible;
     height: 200px;
     padding-bottom: 0;
-    background-color: antiquewhite;
-}
-
-.add-to-cart {
-    position: relative;
-    /* margin: auto; */
-    display: grid;
-    /* overflow: visible; */
-    margin-top: 200px;
-    margin-left: 100px;
-
-    /* top: 0px; */
-    /* left: ; */
-    width: 500px;
-    height: 200px;
-    /* justify-content: center; */
-    padding-bottom: 0;
-    background-color: aquamarine;
+   /* background-color: antiquewhite; */
 }
 
 .product-row{
@@ -56,10 +30,105 @@ img{
     grid-template-columns: repeat(2, 1fr);
 }
 
+.price{
+    text-align: right;
+}
+
 .discount-price{
     color: var(--primary-color);
 }
 
+.cart-button{
+    text-align: right;
+}
+
 .cart-button:hover{
     background-color: var(--primary-color);
+    text-align: right;
 }
+
+
+
+/*---------------------------*/
+
+#product-reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  #product-reviews h3 {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .review {
+    width: 50%;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+  }
+  
+  .review-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .review-header h4 {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+  
+  .rating {
+    font-size: 20px;
+  }
+  
+  .star {
+    color: #ffc107;
+  }
+  
+  .review-content {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+
+/*---------------------------*/
+
+  #related-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  #related-products h3 {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .product {
+    width: 200px;
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .product img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .product h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .product p {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
