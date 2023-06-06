@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300:600:700:800&family=Rubik:wght@300;400;500;600&display=swap');
 
-:root{
-    --primary-color :#ff6b6b;
-    --secondary-color :#794afa;
-    --secondary-dark-color:#453c5c;
+:root {
+    --primary-color: #ff6b6b;
+    --secondary-color: #794afa;
+    --secondary-dark-color: #453c5c;
 
     --white-color: #fff;
     --light-bg-color: #F2F3F5;
@@ -23,13 +23,13 @@
     --trans-color: color .3s;
 }
 
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-body{
-    font-family: 'Rubik',sans-serif;
+body {
+    font-family: 'Rubik', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.4;
@@ -37,75 +37,112 @@ body{
     background-color: var(--white-color);
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
     -webkit-tap-highlight-color: transparent;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-img{
+img {
     max-width: 100%;
     vertical-align: middle;
 }
 
-strong{
+strong {
     font-weight: 800;
 }
 
-table{
+table {
     border-collapse: collapse;
     border-spacing: 0;
 }
 
-input::placeholder{
+input::placeholder {
     font: inherit;
 }
 
-h1,h2,h3,h4{
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Poppins';
 }
 
-h1{
+h1 {
     font-size: calc(1.3em+1vw);
     font-weight: 800;
     line-height: 1;
 }
 
-h2{
+h2 {
     font-size: 2.5em;
 }
 
-h3{
+h3 {
     font-size: 1.2em;
     font-weight: 700;
 }
 
-h4{
+h4 {
     font-size: 1em;
     font-weight: 600;
 }
 
-.container{
+.container {
     max-width: 1280px;
     /* margin-top: 100px; */
     margin: 0 auto;
     padding: 0 0.938em;
+
 }
 
-.column{
+.cart-line1{
+    position: relative;
+    top: 50px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    overflow: visible;
+    height: 300px;
+    width: 600px;
+    padding-bottom: 90;
+    /* background-color: antiquewhite; */
+}
+
+.container-cart {
+    width: 800px;
+    /* border: solid 1px; */
+}
+
+.cart-img {
+    width: 300px;
+}
+
+.cart-button2{
+    text-align: center;
+    background-color: rgb(209, 249, 236);
+}
+
+.cart-button2:hover{
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+
+.column {
     margin-left: -0.938em;
     margin-right: -0.938em;
 }
 
-.column .row{
+.column .row {
     padding: 0 0.938em;
 }
 
-.flexwrap{
+.flexwrap {
     display: flex;
     flex-wrap: wrap;
 }
@@ -116,12 +153,12 @@ h4{
     justify-content: center;
 }
 
-.flexitem{
+.flexitem {
     display: flex;
     align-items: center;
 }
 
-.flexcol{
+.flexcol {
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -132,36 +169,37 @@ h4{
 
 /*-------------------------HEADER-------------------------*/
 
-.main-links a:hover{
+.main-links a:hover {
     color: var(--secondary-color);
 }
 
-.second-links a:hover{
-    color: var(--light-text-color);   
+.second-links a:hover {
+    color: var(--light-text-color);
 }
 
-.icon-small, .icon-large{
+.icon-small,
+.icon-large {
     display: flex;
     align-items: center;
     padding: 0 0.25em;
     font-weight: normal;
 }
 
-.icon-small{
+.icon-small {
     font-size: 1.25em;
     margin-left: auto;
 }
 
-.icon-large{
+.icon-large {
     font-size: 1.75em;
     padding: 0 0.75em 0 0;
 }
 
-.mobile-hide{
+.mobile-hide {
     display: none;
 }
 
-.objest-cover img{
+.objest-cover img {
     position: absolute;
     object-fit: cover;
     width: var(--percent100);
@@ -169,13 +207,14 @@ h4{
     display: block;
 }
 
-.products .media{
+.products .media {
     position: relative;
     flex-shrink: 0;
     overflow: hidden;
 }
 
-.primary-button .secondary-button, .light-button{
+.primary-button .secondary-button,
+.light-button {
     font-size: var(--font-small);
     padding: 0.9em 2em;
     height: auto;
@@ -184,14 +223,14 @@ h4{
     transform: var(--trans-background-color);
 }
 
-.view-all{
+.view-all {
     font-size: var(--font-small);
     display: flex;
     gap: 1em;
     transform: var(--trans-color);
 }
 
-.mini-text{
+.mini-text {
     font-size: var(--font-smaller);
     color: var(--light-text-color);
 }
@@ -206,29 +245,29 @@ h4{
 
 
 
-:where(.off-canvas, header) li > a {
+:where(.off-canvas, header) li>a {
     display: flex;
     position: relative;
     line-height: inherit;
     transition: var(--trans-color);
 }
 
-.header-top .wrapper{
+.header-top .wrapper {
     font-size: 13px;
     font-weight: 300;
     justify-content: space-between;
     line-height: 42px;
 }
 
-.header-top .wrapper ul{
+.header-top .wrapper ul {
     gap: 2em;
 }
 
-.header-top li{
+.header-top li {
     position: relative;
 }
 
-.header-top ul ul{
+.header-top ul ul {
     position: absolute;
     left: -1em;
     line-height: 2em;
@@ -238,18 +277,19 @@ h4{
     display: none;
 }
 
-:where(.header-top, .thetop-nav) .right ul ul li a{
+:where(.header-top, .thetop-nav) .right ul ul li a {
     padding: 0.25em 1em;
 }
-:where(.header-top, .thetop-nav) .right ul ul li.current a{
+
+:where(.header-top, .thetop-nav) .right ul ul li.current a {
     background-color: var(--border-color);
 }
 
-.header-top li:hover ul{
+.header-top li:hover ul {
     display: block;
 }
 
-.header-nav{
+.header-nav {
     padding: 0.5em 0;
     margin-bottom: 1.5em;
     border-bottom: 1px solid var(--border-color);
@@ -257,7 +297,7 @@ h4{
 
 
 
-.trigger{
+.trigger {
     font-size: 1.5em;
     display: flex;
     padding: 0.25em;
@@ -276,7 +316,7 @@ h4{
     left: 0;
 }
 
-.header-nav nav > ul {
+.header-nav nav>ul {
     line-height: 100px;
     gap: 2em;
 }
@@ -291,7 +331,7 @@ h4{
     color: var(--white-color);
 }
 
-nav .fly-item{
+nav .fly-item {
     top: 50%;
     margin-top: -24px;
     width: 25px;
@@ -300,16 +340,16 @@ nav .fly-item{
     background-color: var(--primary-color);
 }
 
-.header-nav .right{
+.header-nav .right {
     position: relative;
     margin-left: auto;
 }
 
-.header-nav .right .icon-large{
+.header-nav .right .icon-large {
     position: relative;
 }
 
-.header-nav .right .fly-item{
+.header-nav .right .fly-item {
     top: 0;
     right: 15px;
     width: 15px;
@@ -317,7 +357,7 @@ nav .fly-item{
     border-radius: var(--percent50);
 }
 
-.mega .flexcol{
+.mega .flexcol {
     flex: 1;
     min-width: 180px;
     padding-right: 2.5em;
@@ -325,22 +365,22 @@ nav .fly-item{
     z-index: 1;
 }
 
-.header-main{
+.header-main {
     background-color: var(--secondary-dark-color);
     padding: 1.5em;
     margin-bottom: 2em;
 }
 
-.dpt-cat{
+.dpt-cat {
     position: relative;
     z-index: 10;
 }
 
-.dpt-menu{
+.dpt-menu {
     align-items: center;
 }
 
-.dpt-cat .dpt-head{
+.dpt-cat .dpt-head {
     position: relative;
     width: 300px;
     padding: 0.75em 1.5em;
@@ -351,11 +391,11 @@ nav .fly-item{
     align-items: right;
 }
 
-.dpt-cat .dpt-head .mini-text{
+.dpt-cat .dpt-head .mini-text {
     color: var(--light-bg-color);
 }
 
-.dpt-cat .dpt-trigger{
+.dpt-cat .dpt-trigger {
     position: absolute;
     right: -40px;
     top: 0;
@@ -364,7 +404,7 @@ nav .fly-item{
     width: 60px;
 }
 
-.dpt-menu >ul >li > a {
+.dpt-menu>ul>li>a {
     font-size: var(--font-small);
     height: 46px;
     align-items: center;
@@ -374,21 +414,21 @@ nav .fly-item{
     display: block;
 }
 
-.dpt-menu .has-child li a:hover{
+.dpt-menu .has-child li a:hover {
     text-decoration: underline;
 }
 
 
 
-.header-main .right{
+.header-main .right {
     flex: 1;
 }
 
-form{
+form {
     position: relative;
 }
 
-form.search input{
+form.search input {
     line-height: 3.25em;
     padding: 0 7em 0 4.5em;
     border: 0;
@@ -399,7 +439,7 @@ form.search input{
     font-weight: 300;
 }
 
-form.search :where(span,button){
+form.search :where(span, button) {
     position: absolute;
     top: 0;
     padding: 0.1em 1.5em;
@@ -408,7 +448,7 @@ form.search :where(span,button){
     height: var(--percent100);
 }
 
-form.search button{
+form.search button {
     right: 0;
     border: 0;
     outline: 0;
@@ -416,12 +456,12 @@ form.search button{
     font-weight: 600;
     background-color: var(--primary-color);
     color: var(--white-color);
-    border-radius: 0 7px 7px 0 ;
+    border-radius: 0 7px 7px 0;
     cursor: pointer;
     transition: var(--trans-background);
 }
 
-form.search button:hover{
+form.search button:hover {
     background-color: var(--dark-color);
 }
 
@@ -439,7 +479,7 @@ form.search button:hover{
     will-change: transform, visbility;
 }
 
-.showmenu .site-off{
+.showmenu .site-off {
     transform: translateX(0);
     visibility: visible;
     transform: transform .4s 0s visbility 0s 0s;
@@ -482,7 +522,7 @@ form.search button:hover{
     opacity: .75;
 }
 
-.off-canvas .dpt-head{
+.off-canvas .dpt-head {
     font-size: var(--font-small);
     padding: 1em;
     margin-bottom: 1em;
@@ -491,7 +531,7 @@ form.search button:hover{
     border-radius: 7px 7px 0 0;
 }
 
-.off-canvas .has-child > :where(ul, .mega){
+.off-canvas .has-child> :where(ul, .mega) {
     font-size: var(--font-small);
     font-weight: 300;
     line-height: 28px;
@@ -503,11 +543,12 @@ form.search button:hover{
     transition: max-height .3s cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 
-.off-canvas .expand > :where(ul, .meag) {
+.off-canvas .expand> :where(ul, .meag) {
     max-height: 2000px;
 }
 
-.off-canvas .thetop-nav ul, .off-canvas nav > ul {
+.off-canvas .thetop-nav ul,
+.off-canvas nav>ul {
     flex-direction: column;
     align-items: flex-start;
     font-size: var(--font-small);
@@ -517,11 +558,11 @@ form.search button:hover{
     margin: 1.25em 0;
 }
 
-.off-canvas nav .mega{
-    padding:  0;
+.off-canvas nav .mega {
+    padding: 0;
 }
 
-.off-canvas .has-child .icon-small{
+.off-canvas .has-child .icon-small {
     padding: 0.5em;
     line-height: initial;
 }
@@ -534,7 +575,7 @@ form.search button:hover{
     width: var(--percent100);
 }
 
-.off-canvas .thetop-nav .right > ul > :where(:nth-child(4),li:nth-child(5)) > a {
+.off-canvas .thetop-nav .right>ul> :where(:nth-child(4), li:nth-child(5))>a {
     display: none;
 }
 
@@ -548,7 +589,7 @@ form.search button:hover{
 
 
 /*-------------------------HEADER-------------------------*/
- 
+
 /*-------------------------SLIDER-------------------------*/
 
 
@@ -558,24 +599,26 @@ form.search button:hover{
     max-width: 800px;
     margin: 0 auto;
     overflow: hidden;
-  }
-  
+}
+
 .slide {
     position: absolute;
     top: 10;
-    right: 20%; /* Align to the right */
+    right: 20%;
+    /* Align to the right */
     width: 20%;
-    height: 50%; /* Adjust the height as needed */
+    height: 50%;
+    /* Adjust the height as needed */
     opacity: 0;
     transform: translateX(100%);
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-  }
-  
+}
+
 .slide.active {
     opacity: 1;
     transform: translateX(0);
-  }
-  
+}
+
 
 /*-------------------------SLIDER-------------------------*/
 
@@ -622,29 +665,34 @@ form.search button:hover{
 
 
 
-@media screen and (min-width: 990px){
-    .container{
+@media screen and (min-width: 990px) {
+    .container {
         padding: 0 2em;
     }
-    .desktop-hide{
+
+    .desktop-hide {
         display: none;
     }
-    .mobile-hide{
+
+    .mobile-hide {
         display: block;
     }
+
     .logo a {
         margin-right: 2em;
     }
-    .header-nav{
+
+    .header-nav {
         padding: 0;
         margin: 0;
         border-bottom: 0;
     }
-    .header-nav .right li > a {
+
+    .header-nav .right li>a {
         margin-left: 1em;
     }
-    
-    nav .mega{
+
+    nav .mega {
         position: absolute;
         width: var(--percent100);
         height: auto;
@@ -660,50 +708,58 @@ form.search button:hover{
         display: none;
     }
 
-    nav li.has-child:hover .mega{
+    nav li.has-child:hover .mega {
         display: block;
     }
 
-    nav .mega .wrapper{
+    nav .mega .wrapper {
         display: flex;
     }
-    nav .mega h4{
+
+    nav .mega h4 {
         font-size: 0.8em;
         text-transform: uppercase;
     }
-    nav .mega ul{
+
+    nav .mega ul {
         font-size: var(--font-small);
     }
-    nav .mega .brands{
+
+    nav .mega .brands {
         display: flex;
         flex-wrap: wrap;
         max-width: 180px;
     }
-    nav .mega .brands li{
+
+    nav .mega .brands li {
         min-width: 100px;
     }
-    nav .mega .view-all{
+
+    nav .mega .view-all {
         margin-top: 1em;
     }
-    nav .mega .flexcol.products{
+
+    nav .mega .flexcol.products {
         flex: 2;
         padding: 0;
         align-items: center;
         position: relative;
     }
-    nav .mega .products .row{
+
+    nav .mega .products .row {
         width: var(--percent100);
     }
-    nav .mega .products .media{
+
+    nav .mega .products .media {
         height: 400px;
     }
 
-    .header-main .right{
-      max-width: 600px;
-      margin-left: auto;  
+    .header-main .right {
+        max-width: 600px;
+        margin-left: auto;
     }
 
-    .dpt-menu{
+    .dpt-menu {
         position: absolute;
         top: var(--percent100);
         width: 347px;
@@ -713,14 +769,15 @@ form.search button:hover{
         border-bottom: 0;
     }
 
-    .dpt-menu > ul > li > a {
+    .dpt-menu>ul>li>a {
         font-weight: 500;
         padding: 0 1.5em;
         border-bottom: 1px solid var(--border-color);
     }
 
 
-    .dpt-menu .has-child > ul, .dpt-menu .mega {
+    .dpt-menu .has-child>ul,
+    .dpt-menu .mega {
         position: absolute;
         top: 0;
         left: var(--percent100);
@@ -758,7 +815,7 @@ form.search button:hover{
         background-color: var(--white-color);
     }
 
-    .dpt-menu .has-child > :where(ul,.mega)::before {
+    .dpt-menu .has-child> :where(ul, .mega)::before {
         content: '';
         position: absolute;
         top: 0;
@@ -772,7 +829,7 @@ form.search button:hover{
         min-width: var(--percent100);
     }
 
-    .dpt-menu .has-child:hover .mega{
+    .dpt-menu .has-child:hover .mega {
         display: flex;
     }
 
@@ -785,13 +842,13 @@ form.search button:hover{
 }
 
 /* -----------------------------------------------------------------------footer------------------------------------ */
-    
-.footer-block{
+
+.footer-block {
     position: relative;
     text-align: center;
 }
 
-.footer-block-index{
+.footer-block-index {
     position: relative;
     margin: auto;
     display: flex;
