@@ -785,7 +785,7 @@ form.search button:hover {
         height: auto;
         min-height: var(--percent100);
         padding: 1.5em;
-        font-size: var(--font-small);
+        font-size: 15px;
         line-height: 2.5em;
         border: 1px solid var(--border-color);
         border-top: 0;

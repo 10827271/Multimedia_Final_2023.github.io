@@ -6,10 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>歪國零食 product-detail01</title>
+
     <link rel="stylesheet" href="../assets/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/all-shop.css">
+    <link rel="stylesheet" href="../assets/css/log-in.css">
     <link rel="stylesheet" href="../assets/css/product-detail.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,10 +23,10 @@
 <body>
     <div id="page" class="site">
 
-        <aside class="site-off desktop-hide">
+       <aside class="site-off desktop-hide">
             <div class="off-canvas">
-                <div class="canvas-head">
-                    <div class="logo"><a href="./index.html"><samp class="circle">歪國零食</samp></a></div>
+                <div class="canvas-head flexitem">
+                    <div class="logo"><a href="#">歪國零食CPT</a></div>
                     <a href="#" class="t-close flexcenter"><i class="ri-close-line"></i></a>
                 </div>
                 <div class="departments"></div>
@@ -39,19 +42,11 @@
             <div class="header-top mobile-hide">
                 <div class="container">
                     <div class="wrapper flexitem">
-                        <!-- <div class="left">
-                            <ul class="flexitem main-links">
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Featured Products</a></li>
-                                <li><a href="#">Wishlist</a></li>
-                            </ul>
-                        </div> -->
                         <div class="right">
                             <ul class="flexitem">
                                 <li class="main-links">
-                                <li><a href="">登入</a></li>
-                                <li><a href="">我的帳號</a></li>
-                                <li><a href="">賬單追蹤</a></li>
+                                <li><a href="./log-in.html">登入</a></li>
+                                <li><a href="#">我的帳號</a></li>
                                 </li>
                             </ul>
                         </div>
@@ -60,18 +55,18 @@
             </div>
             <!--header-top -->
 
-            <div class="header-nav">
+           <div class="header-nav">
                 <div class="container">
                     <div class="wrapper flexitem">
                         <a href="#" class="trigger desktop-hide"><span class="i ri-menu-2-line"></span></a>
                         <div class="left flexitem">
-                            <div class="logo"><a href="/"><samp class="circle">歪國零食</samp></a></div>
+                            <div class="logo"><a href="#"><samp class="circle">歪國零食CPT</samp></a></div>
                             <nav class="mobile-hide">
                                 <ul class="flexitem second-links">
-                                    <li><a href="#">首頁</a></li>
+                                    <li><a href="./index.html">首頁</a></li>
 
-                                    <li class="has-child">
-                                        <a href="#">商品類別
+                                   <li class="has-child">
+                                        <a href="../pages/allproduct.html">商品類別
                                             <div class="icon-small"><i class="ri-arrow-down-s-line"></i></div>
                                         </a>
                                         <div class="mega">
@@ -81,9 +76,9 @@
                                                         <div class="row">
                                                             <h4>candy</h4>
                                                             <ul>
-                                                                <li><a href="#">candy1</a></li>
-                                                                <li><a href="#">candy2</a></li>
-                                                                <li><a href="#">candy3</a></li>
+                                                                <li><a href="./product-candy-01.html">candy1</a></li>
+                                                                <li><a href="./product-candy-02.html">candy2</a></li>
+                                                                <li><a href="./product-candy-03.html">candy3</a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -131,7 +126,7 @@
                                                             <div class="media">
                                                                 <div class="thumbnail objest-cover">
                                                                     <a href="">
-                                                                        <img src="/assets/Images/chips/chips0001.png"
+                                                                        <img src="../assets/Images/snack/chips0001.png"
                                                                             alt="">
                                                                     </a>
                                                                 </div>
@@ -145,8 +140,7 @@
 
                                     <li><a href="#">熱買商品</a></li>
 
-                                    <li><a href="#">關於我們</a></li>
-
+                                     <li><a href="../pages/about-us.html">關於我們</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -154,17 +148,13 @@
                         <div class="right">
                             <ul class="flexitem second-links">
                                 <li><a href="#">
+
                                         <div class="icon-large">
                                             <i class="ri-shopping-cart-line"></i>
                                             <div class="fly-item"><span class="item-number">0</span></div>
                                         </div>
-
-                                        <div class="icon-text">
-                                            <div class="mini-text">total</div>
-                                            <div class="cart-total">$0.00</div>
-                                        </div>
-                                    </a></li>
-
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -178,8 +168,8 @@
                             <div class="dpt-cat">
 
                                 <div class="dpt-head">
-                                    <div class="main-text">ALL Departments</div>
-                                    <div class="mini-text mobile-hide">Total 1059 Products</div>
+                                    <div class="main-text">全部</div>
+                                    <div class="mini-text mobile-hide">查看其他功能</div>
                                     <a href="#" class="dpt-trigger mobile-hide">
                                         <i class="ri-menu-3-line ri-xl"></i>
                                     </a>
@@ -294,8 +284,8 @@
                             <div class="search-box">
                                 <form action="" class="search">
                                     <span class="icon-large"><i class="ri-search-line"></i></span>
-                                    <input type="search" placeholder="Search for products">
-                                    <button type="submit">Search</button>
+                                    <input type="search" placeholder="搜尋  歪國零食CPT">
+                                    <button type="submit"><i class="ri-search-line"></i></button>
                                 </form>
                             </div>
                         </div>
